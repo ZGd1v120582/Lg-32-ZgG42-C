@@ -1,7 +1,6 @@
 return {
 
     ["PavelDIPF"] = { t = "u" },
-    ["twisted_k1d"] = { t = "u"},
 
     ["Shape_38"] = { t = "l", e = "01.01.2026" },
     ["OrangeDeveloperr"] = { t = "l", e = "01.01.2026" },
