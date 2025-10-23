@@ -2,8 +2,6 @@ local betavalue = true
 
 local users = {
     ["PavelDIPF"] = { t = "u" },
---    ["twisted_k1d"] = { t = "u" },
-    
     ["twisted_k1d"] = { t = "b1" },
 
     ["Shape_38"] = { t = "l", e = "01.01.2026" },
@@ -20,9 +18,11 @@ if betavalue then
     end
 else
     for name, data in pairs(users) do
-        if data.t == "b1" then continue end
-        data.t = "l"
-        data.c = "01.01.2025"
+        if data.t == "b" then continue end
+        if data.t == "b1" then
+            data.t = "l"
+            data.c = "01.01.2025"
+        end
     end
 end
 
